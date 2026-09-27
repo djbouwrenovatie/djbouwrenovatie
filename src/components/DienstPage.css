@@ -1,0 +1,405 @@
+/* ===== DIENST HERO ===== */
+.dienst-hero {
+  background-color: var(--color-bg-dark);
+  padding: 4rem 0;
+}
+
+.dienst-hero__inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.dienst-hero__icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.dienst-hero h1 {
+  color: var(--color-white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.dienst-hero__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.dienst-hero__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Contact Card */
+.dienst-hero__contact-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.dienst-hero__contact-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.dienst-hero__contact-card p {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.contact-card__items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-card__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-border);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  transition: var(--transition);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-card__item svg {
+  flex-shrink: 0;
+  color: var(--color-accent);
+}
+
+.contact-card__item:hover {
+  border-color: var(--color-accent);
+  background-color: rgba(139, 105, 20, 0.04);
+  color: var(--color-accent);
+}
+
+.contact-card__item--wa {
+  background-color: #25D366;
+  border-color: #25D366;
+  color: white;
+}
+
+.contact-card__item--wa svg {
+  color: white;
+}
+
+.contact-card__item--wa:hover {
+  background-color: #1ebe59;
+  border-color: #1ebe59;
+  color: white;
+}
+
+/* ===== INTRO ===== */
+.dienst-intro {
+  background-color: var(--color-bg);
+}
+
+.dienst-intro__inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.dienst-intro__text p {
+  color: var(--color-text-light);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.dienst-intro__voordelen {
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.dienst-intro__voordelen h3 {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  color: var(--color-primary);
+}
+
+.dienst-intro__voordelen ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.dienst-intro__voordelen ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.dienst-intro__voordelen ul li svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* ===== WERKZAAMHEDEN ===== */
+.dienst-werkzaamheden {
+  background-color: var(--color-white);
+}
+
+.werkzaamheden-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.werkzaamheid-card {
+  background-color: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  transition: var(--transition);
+}
+
+.werkzaamheid-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.werkzaamheid-card__number {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-border);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.werkzaamheid-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.werkzaamheid-card p {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ===== STAPPEN ===== */
+.dienst-stappen {
+  background-color: var(--color-bg);
+}
+
+.stappen-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.stap {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 0 0 2rem 0;
+  position: relative;
+}
+
+.stap__number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: var(--font-heading);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.stap__line {
+  position: absolute;
+  left: 27px;
+  top: 56px;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-border);
+}
+
+.stap__content {
+  padding-top: 0.75rem;
+}
+
+.stap__content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.stap__content p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ===== PRIJS ===== */
+.dienst-prijs-section {
+  background-color: var(--color-primary);
+  padding: 3rem 0;
+}
+
+.dienst-prijs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.dienst-prijs h2 {
+  color: var(--color-white);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.dienst-prijs p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  max-width: 500px;
+}
+
+/* ===== FAQ ===== */
+.dienst-faq {
+  background-color: var(--color-white);
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.faq-item {
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-item[open] {
+  border-color: var(--color-accent);
+}
+
+.faq-item summary {
+  padding: 1.25rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-primary);
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  line-height: 1;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-item p {
+  padding: 0 1.5rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+/* ===== BOTTOM CTA ===== */
+.dienst-bottom-cta {
+  background-color: var(--color-bg);
+}
+
+.dienst-bottom-cta__inner {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dienst-bottom-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.dienst-bottom-cta p {
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.dienst-bottom-cta__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .dienst-hero__inner,
+  .dienst-intro__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .dienst-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .werkzaamheden-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dienst-prijs {
+    flex-direction: column;
+    text-align: center;
+  }
+}
